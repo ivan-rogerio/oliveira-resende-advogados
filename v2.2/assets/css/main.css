@@ -834,27 +834,27 @@
      }
 
     .image-bg-01 {
-        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('/assets/images/assessoria-contabil.jpg');
+        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('../images/assessoria-contabil.jpg');
      }
 
     .image-bg-02 {
-        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('/assets/images/assessoria-tributaria.jpg');
+        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('../images/assessoria-tributaria.jpg');
      }
 
     .image-bg-03 {
-        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('/assets/images/assessoria-societaria.jpg');
+        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('../images/assessoria-societaria.jpg');
      }
 
     .image-bg-04 {
-        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('/assets/images/abertura-de-empresa.jpg');
+        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('../images/abertura-de-empresa.jpg');
      }
 
     .image-bg-05 {
-        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('/assets/images/dep-pessoal.jpg');
+        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('../images/dep-pessoal.jpg');
      }
 
     .image-bg-06 {
-        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('/assets/images/imposto-de-renda.jpg');
+        background-image: linear-gradient(rgba(53, 26, 10, 0.3), rgba(53, 26, 10, 0.6)), url('../images/imposto-de-renda.jpg');
      }
 
     .service-card-content {
@@ -950,7 +950,7 @@
     ========================================================================== */
     @media (max-width: 768px) {
     .services-grid {
-        grid-template-columns: 1fr; /* Transforma em 1 coluna única no celular */
+        grid-template-columns: 1fr; 
         gap: 24px;
     }
 
