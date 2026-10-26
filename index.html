@@ -3,689 +3,421 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oliveira & Resende</title>
-
+    <title>Oliveira e Resende Advogados Associados</title>
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
+    <!-- ICONS -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-regular-straight/css/uicons-regular-straight.css'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-
-  <!-- Menu de Navegação -->
-    <header class="header">
-        <nav class="navbar">
-        <div class="logo-container">
-            <a href="#" class="logo">
-            <img src="assets/images/logo.png" alt="Logo">
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="" class="nav-logo">
+            <img src="/assets/images/logo-azul.png" alt="Oliveira e Resende Advogados Associados" class="logo-img">
             </a>
+            <!-- Links de Navegação (Desktop) -->
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre Nós</a>
+                <a href="#areas" class="nav-link">Áreas de Atuação</a>
+                <a href="#features" class="nav-link">Diferenciais</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+            <!-- Ação Direta (Botão de Contato) -->
+            <div class="nav-cta">
+                <a href="#contact" class="btn-nav">Entrar em Contato</a>
+            </div>
+
+            <button type="button" class="mobile-menu-button" aria-controls="mobile-menu" aria-expanded="false">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg class="close-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" style="display: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>     
         </div>
-        
-        <!-- Bloco 2: Links Centrais (No mobile, ganha o CTA no fim da lista) -->
-        <ul class="nav-menu" id="nav-menu">
-            <li><a href="#" class="nav-link">Início</a></li>
-            <li><a href="#" class="nav-link">Áreas de Atuação</a></li>
-            <li><a href="#" class="nav-link">Diferenciais</a></li>
-            <li><a href="#" class="nav-link">Contato</a></li>
-            <!-- Este item só aparece no mobile dentro da cortina -->
-            <li class="mobile-cta" style="display: none;">
-            <a href="#" class="cta-btn">Entrar em Contato</a>
-            </li>
-        </ul>
 
-        <!-- Bloco 3: Botão CTA do Desktop -->
-        <div class="nav-actions">
-            <a href="#" class="cta-btn">Entrar em Contato</a>
+        <div class="mobile-menu" id="mobile-menu">
+            <nav class="mobile-nav">
+            <a href="#" class="mobile-nav-link">Início</a>
+            <a href="#about" class="mobile-nav-link">Sobre Nós</a>
+            <a href="#areas" class="mobile-nav-link">Área de Atuação</a>
+            <a href="#features" class="mobile-nav-link">Diferenciais</a>
+            <a href="#contact" class="mobile-nav-link">Contato</a>
+            </nav>
+            <div class="mobile-cta">
+            <div class="mobile-cta-container">
+                <a href="#contact" class="mobile-get-started">Entrar em Contato</a>
+            </div>
+            </div>
         </div>
-
-        <!-- Botão Hambúrguer -->
-        <button class="hamburger" id="hamburger" aria-label="Abrir menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        </nav>
     </header>
-    <section class="hero-section">
-      <div class="hero-container">
-        <div class="content-wrapper">
-          <div class="content-column">
-            <span class="hero-tag">Assessoria Contábil e Empresarial</span>
-            <h1 class="hero-title">Compromisso, seriedade e confiança para cuidar da sua empresa</h1>
-            <p class="hero-description">Especializados em assessoria contábil, fiscal, tributária e empresarial para empresas e empreendedores</p>
-            <div class="hero-button-group">
-              <a href="#" class="hero-primary-button">Saiba mais</a>
-              <a href="#" class="hero-secondary-button">Área de Atuação</a>
-            </div>
-          </div>
-          <div class="image-column">
-            <div class="main-image-wrapper">
-              <img src="assets/images/logo-metalico.png" alt="" class="main-image" loading="lazy">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="about-section" aria-labelledby="about-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Sobre o escritório</span>
-                <h2 id="about-heading" class="section-title">Experiência e conhecimento a serviço da sua tranquilidade</h2>
-            </div>
-            <div class="grid-container">
-                <div class="text-content">
-                    <h3>Oliveira e Resende Advogados Associados</h3>
-                    <p>A Oliveira e Resende atua com consultoria e assessoria contábil, oferecendo suporte às empresas em suas rotinas fiscais, tributárias, contábeis e administrativas relacionadas à gestão empresarial.<br><br> Com uma equipe de profissionais dedicados e qualificados, buscamos compreender as particularidades de cada negócio para oferecer atendimento responsável, orientação adequada e acompanhamento das demandas de nossos clientes.<br><br>Acreditamos que uma assessoria eficiente vai além do cumprimento de obrigações: ela também contribui para a organização das informações, o acompanhamento das responsabilidades empresariais e a tomada de decisões mais conscientes.</p>
+    <main>
+         <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-overlay" aria-hidden="true"></div>
+            <video autoplay loop muted playsinline class="hero-video">
+                <source src="./assets/videos/hero-video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-container">
+
+            <!-- Bloco de Conteúdo (Texto e Botão) -->
+                <div class="hero-content">
+                    <span class="hero-tagline">Assessoria Contábil e Empresarial</span>   
+                    <h1>Segurança jurídica para impulsionar o crescimento do seu negócio</h1> 
+                    <p>Atuamos na proteção e estruturação de empresas com soluções inteligentes em assessoria contábil, fiscal, tributária e empresarial.</p>
+                    
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">Agendar Reunião</a>
+                        <a href="#areas" class="btn btn-secondary">Áreas de Atuação</a>
+                    </div>
                 </div>
-                <div class="visual-content">
-                    <div class="display-image">
-                        <img src="assets/images/about-us-image.jpg" alt="" loading="lazy">
+
+                <!-- Bloco da Imagem (Foto Corporativa) -->
+                <div class="hero-image-wrapper">
+                    <!-- Substitua o 'src' pela URL da foto do seu escritório ou dos sócios -->
+                    <img src="assets/images/logo-metalico.png" alt="Escritório de Advocacia Empresarial" class="hero-image">
+                </div>
+
+            </div>
+        </section>
+
+         <!-- SEÇÃO INSTITUCIONAL (SOBRE NÓS) -->
+        <section class="main-section section-dark" id="about">
+            <div class="about-container">
+                <!-- Coluna da Esquerda -->
+                <div class="about-content">
+                    <span class="about-tagline">Nossa Instituição</span>
+                    <h2>Tradição jurídica combinada com visão de negócios</h2>
+                    
+                    <p>A Oliveira e Resende atua com consultoria e assessoria contábil, oferecendo suporte às empresas em suas rotinas fiscais, tributárias, contábeis e administrativas relacionadas à gestão empresarial.</p>
+                    <p>Com uma equipe de profissionais dedicados e qualificados, buscamos compreender as particularidades de cada negócio para oferecer atendimento responsável, orientação adequada e acompanhamento das demandas de nossos clientes.</p>
+                    <p>Acreditamos que uma assessoria eficiente vai além do cumprimento de obrigações: ela também contribui para a organização das informações, o acompanhamento das responsabilidades empresariais e a tomada de decisões mais conscientes.</p>
+                    
+                    <div class="about-pillars">
+                        <div class="pillar-item">
+                            <span class="pillar-title">Atendimento Personalizado</span>
+                            <p class="pillar-desc">Sócios diretamente envolvidos na condução de cada caso e estratégia.</p>
+                        </div>
+                        <div class="pillar-item">
+                            <span class="pillar-title">Visão Multidisciplinar</span>
+                            <p class="pillar-desc">Integração entre as áreas societária, tributária e cível corporativa.</p>
+                        </div>
+                        <div class="pillar-item">
+                            <span class="pillar-title">Foco em Resultados</span>
+                            <p class="pillar-desc">Redução de passivos e mitigação de riscos focadas na eficiência financeira.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna da Direita -->
+                <div class="about-column">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/quem-somos.jpg" alt="Sócios do Escritório" class="about-image">
+                        <div class="about-experience-badge">
+                        <span class="badge-years">+10</span>
+                        <span class="badge-text">Anos de Atuação Empresarial</span>
+                </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="quote-section" aria-labelledby="testimonial-heading">
-        <div class="quote-container">
-            <figure class="quote-card">
-                <div class="quote-mark" aria-hidden="true">
-                    <svg fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
-                    </svg>
-                </div>
-                <blockquote class="quote-content">
-                    <p class="quote-text">
-                        Nosso compromisso é construir relacionamentos profissionais pautados pela confiança, pela transparência e pela qualidade do atendimento.
-                    </p>
-                </blockquote>
-            </figure>
-        </div>
-    </section>
-
-    <section class="process-section">
-        <div class="container">
-            <div class="section-header">
-            <span class="section-tag">Nossos Diferenciais</span>
-            <h2 class="section-title">Atendimento, responsabilidade e dedicação em cada etapa.</h2>
-            <p class="section-description text-left">Cada empresa possui necessidades próprias. Por isso, valorizamos o atendimento personalizado e a busca por soluções compatíveis com a realidade e as demandas de cada cliente. Nosso compromisso está baseado em quatro pilares:</p>
-
-            </div>
-            <div class="steps-grid">
-            <div class="step-card">
-                <div class="step-content">
-                <div class="step-number">1</div>
-                <h3 class="step-title">Responsabilidade e Ética</h3>
-                <p class="step-description">Atuamos com seriedade e comprometimento no atendimento às demandas profissionais de nossos clientes.</p>
-                </div>
-            </div>
-
-            <div class="step-card">
-                <div class="step-content">
-                <div class="step-number">2</div>
-                <h3 class="step-title">Conhecimento Técnico</h3>
-                <p class="step-description">Buscamos oferecer orientação adequada nas áreas contábil, fiscal, tributária e empresarial, considerando as necessidades de cada negócio.</p>
-                </div>
+         <!-- SEÇÃO: ÁREAS DE ATUAÇÃO -->
+        <section id="areas" class="main-section section-light">
+            <div class="services-container">
                 
-            </div>
-            <div class="step-card">
-                <div class="step-content">
-                <div class="step-number">3</div>
-                <h3 class="step-title">Organização e Acompanhamento</h3>
-                <p class="step-description">Trabalhamos para apoiar o cumprimento das rotinas e obrigações aplicáveis, contribuindo para uma gestão mais organizada.</p>
+                <!-- Cabeçalho da Seção -->
+                <div class="services-header">
+                    <span class="services-tagline">Áreas de Atuação</span>
+                    <h2>Soluções para diferentes necessidades contábeis e empresariais</h2>
+                    <p>Oferecemos suporte consultivo e contencioso altamente especializado para proteger os ativos e viabilizar as operações de nossos clientes.</p>
                 </div>
+
+                <!-- Grid de Cartões -->
+                <div class="services-grid">           
+                    <!-- Card 1 -->
+                    <div class="service-card">
+                        <div class="service-card-background image-bg-01"></div>
+                        <div class="service-card-content">
+                            <div class="card-icon">
+                                <span class="icon-shape"><i class="fi fi-rs-calculator-money"></i></span>
+                            </div>
+                            <h3>Assessoria Contábil</h3>
+                            <p>Informações contábeis que apoiam a gestão do seu negócio</p>
+                            <a href="services-details.html#s1" class="arrow-link">Saiba Mais<span class="icon-arrow" aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="service-card">
+                        <div class="service-card-background image-bg-02"></div>
+                        <div class="service-card-content">
+                            <div class="card-icon">
+                                <span class="icon-shape"><i class="fi fi-rs-file-invoice-dollar"></i></span>
+                            </div>
+                            <h3>Assessoria Fiscal e Tributária</h3>
+                            <p>Acompanhamento para com as obrigações fiscais da sua empresa</p>
+                            <a href="services-details.html#s2" class="arrow-link">Saiba Mais<span class="icon-arrow" aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="service-card">
+                        <div class="service-card-background image-bg-03"></div>
+                        <div class="service-card-content">
+                            <div class="card-icon">
+                                <span class="icon-shape"><i class="fi fi-rs-handshake"></i></span>
+                            </div>
+                            <h3>Assessoria Societária</h3>
+                            <p>Apoio para a organização e a regularidade da sua empresa</p>
+                            <a href="services-details.html#s3" class="arrow-link">Saiba Mais<span class="icon-arrow" aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="service-card">
+                        <div class="service-card-background image-bg-04"></div>
+                        <div class="service-card-content">
+                            <div class="card-icon">
+                                <span class="icon-shape"><i class="fi fi-rs-employees"></i></span>
+                            </div>
+                            <h3>Departamento Pessoal</h3>
+                            <p>Mais controle para as rotinas trabalhistas da sua empresa</p>
+                            <a href="services-details.html#s4" class="arrow-link">Saiba Mais<span class="icon-arrow" aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="service-card">
+                        <div class="service-card-background image-bg-05"></div>
+                        <div class="service-card-content">
+                            <div class="card-icon">
+                                <span class="icon-shape"><i class="fi fi-rs-building"></i></span>
+                            </div>
+                            <h3>Abertura e Legalização de Empresas</h3>
+                            <p>Comece seu negócio com orientação e planejamento</p>
+                            <a href="services-details.html#s5" class="arrow-link">Saiba Mais<span class="icon-arrow" aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Card 6  -->
+                    <div class="service-card">
+                        <div class="service-card-background image-bg-06"></div>
+                        <div class="service-card-content">
+                            <div class="card-icon">
+                                <span class="icon-shape"><i class="fi fi-rs-lion-head"></i></span>
+                            </div>
+                            <h3>Imposto de Renda para Pessoa Física</h3>
+                            <p>Sua declaração de Imposto de Renda com orientação profissional</p>
+                            <a href="services-details.html#s6" class="arrow-link">Saiba Mais<span class="icon-arrow" aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: DIFERENCIAIS / POR QUE NOS ESCOLHER -->
+        <section class="main-section features-section section-dark" id="features">
+            <div class="features-container">  
+                <!-- Bloco de Texto/Introdução (Esquerda) -->
+                <div class="features-intro">
+                    <span class="features-tagline">Nossos Indicadores</span>
+                    <h2>Acelerando decisões corporativas com segurança jurídica</h2>
+                    <p>Mais do que advogados, atuamos como parceiros de crescimento. Por isso, valorizamos o atendimento personalizado e a busca por soluções compatíveis com a realidade e as demandas de cada cliente. Nosso compromisso está baseado em quatro pilares:</p>
+                </div>
+
+                <!-- Bloco de Indicadores/Cards (Direita) -->
+                <div class="features-grid">     
+                    <!-- Diferencial 1 -->
+                    <div class="feature-item">
+                        <span class="feature-number">01</span>
+                        <span class="feature-title">Responsabilidade e ética</span>
+                        <p>Atuamos com seriedade e comprometimento no atendimento às demandas profissionais de nossos clientes.</p>
+                    </div>
+
+                    <!-- Diferencial 2 -->
+                    <div class="feature-item">
+                        <span class="feature-number">02</span>
+                        <span class="feature-title">Conhecimento técnico</span>
+                        <p>Buscamos oferecer orientação adequada nas áreas contábil, fiscal, tributária e empresarial, considerando as necessidades de cada negócio.</p>
+                    </div>
+
+                    <!-- Diferencial 3 -->
+                    <div class="feature-item">
+                        <span class="feature-number">03</span>
+                        <span class="feature-title">Relacionamento e confiança</span>
+                        <p>Valorizamos a comunicação clara, a proximidade no atendimento e a construção de parcerias profissionais duradouras.</p>
+                    </div>
+
+                    <!-- Diferencial 4 -->
+                    <div class="feature-item">
+                        <span class="feature-number">04</span>
+                        <span class="feature-title">Organização e acompanhamento</span>
+                        <p>Trabalhamos para apoiar o cumprimento das rotinas e obrigações aplicáveis, contribuindo para uma gestão mais organizada.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+      
+        <!-- SEÇÃO: CONTATO -->
+        <section class="main-section section-light" id="contact">
+            <div class="contact-container">
                 
-            </div>
-            <div class="step-card">
-                <div class="step-content">
-                <div class="step-number">4</div>
-                <h3 class="step-title">Relacionamento e Confiança</h3>
-                <p class="step-description">Valorizamos a comunicação clara, a proximidade no atendimento e a construção de parcerias profissionais duradouras.</p>
+                <!-- Coluna da Esquerda: Informações Diretas -->
+                <div class="contact-info">
+                    <span class="contact-tagline">Fale Conosco</span>
+                    <h2>Inicie uma parceria estratégica hoje</h2>
+                    <p>Seja para uma consulta pontual, auditoria preventiva ou assessoria contínua, nossa equipe está pronta para responder às demandas do seu negócio com agilidade.</p>
+                    
+                    <div class="contact-channels">
+                        <div class="channel-item">
+                            <span class="channel-label">E-mail Corporativo</span>
+                            <a href="mailto:contato@seuescritorio.com.br" class="channel-link">contato@oliveiraresende.com.br</a>
+                        </div>
+                        <div class="channel-item">
+                            <span class="channel-label">Atendimento Telefônico / WhatsApp</span>
+                            <a href="tel:+551132624832" class="channel-link">+55 (11) 3262-4832</a>
+                        </div>
+                        <div class="channel-item">
+                            <span class="channel-label">Escritório Central</span>
+                            <p class="channel-text">Rua Carlos Sampaio, 304 - Conj. 31<br>Bela Vista - São Paulo - SP<br>01333-020</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            </div>
-            <div class="cta-section">
-            <h3 class="cta-title">Pronto para uma parceria?</h3>
-            <p class="cta-description">Nosso objetivo é oferecer suporte para que empresários e empreendedores possam dedicar mais atenção à gestão e ao desenvolvimento de suas atividades.</p>
-            <div class="cta-buttons">
-                <a href="#" class="btn btn-primary">Entrar em Contato</a>
-            </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="features-section" aria-labelledby="features-heading">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Área de Atuação</span>
-                <h2 class="section-title">Soluções para diferentes necessidades contábeis e empresariais</h2>
-                <p class="section-description">Reunimos serviços voltados à organização contábil, ao acompanhamento fiscal e tributário, à administração das rotinas trabalhistas e à regularização de empresas</p>
-            </div>
-            <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon-container"><i class="fi fi-rs-calculator-money"></i></div>
-                <h3 class="feature-title">Assessoria Contábil</h3>
-                <p class="feature-description">Informações contábeis que apoiam a gestão do seu negócio</p>
-                <div class="feature-link-container">
-                <a href="#" class="feature-link">
-                    Saiba mais
-                    <svg class="feature-link-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                </a>
-                </div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon-container"><i class="fi fi-rs-file-invoice-dollar"></i></div>
-                <h3 class="feature-title">Assessoria Fiscal e Tributária</h3>
-                <p class="feature-description">Mais organização e acompanhamento para as obrigações fiscais da sua empresa</p>
-                <div class="feature-link-container">
-                <a href="#" class="feature-link">
-                    Saiba mais
-                    <svg class="feature-link-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                </a>
-                </div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon-container"><i class="fi fi-rs-handshake"></i></div>
-                <h3 class="feature-title">Assessoria Societária</h3>
-                <p class="feature-description">Apoio para a organização e a regularidade da sua empresa.</p>
-                <div class="feature-link-container">
-                <a href="#" class="feature-link">
-                    Saiba mais
-                    <svg class="feature-link-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                </a>
-                </div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon-container"><i class="fi fi-rs-employees"></i></div>
-                <h3 class="feature-title">Departamento Pessoal</h3>
-                <p class="feature-description">Mais organização para as rotinas trabalhistas da sua empresa.</p>
-                <div class="feature-link-container">
-                <a href="#" class="feature-link">
-                    Saiba mais
-                    <svg class="feature-link-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                </a>
-                </div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon-container">
-                <i class="fi fi-rs-building"></i></div>
-                <h3 class="feature-title">Abertura e Legalização de Empresas</h3>
-                <p class="feature-description">Comece seu negócio com orientação e planejamento.</p>
-                <div class="feature-link-container">
-                <a href="#" class="feature-link">
-                    Saiba mais
-                    <svg class="feature-link-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                    </svg>
-                </a>
-                </div>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon-container">
-                <i class="fi fi-rs-lion-head"></i>
-                </div>
-                <h3 class="feature-title">Imposto de Renda para Pessoa Física</h3>
-                <p class="feature-description">Sua declaração de Imposto de Renda com atenção e orientação profissional.</p>
-                <div class="feature-link-container">
-                <a href="#" class="feature-link">Saiba mais<span class="feature-link-icon"><i class="fi fi-rs-angle-small-right"></i></span></a>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="serviced-section">
-        <div class="container">
-            <div class="serviced-card">
-                <div class="section-header">
-                    <div class="badge">Assessoria Contábil</div>
-                    <h2 class="section-title">Informações contábeis <br>que apoiam a gestão do seu negócio</h2>
-                </div>
-              
-                <div class="serviced-grid">
-                    <div class="serviced-content">
-                        <p class="service-description">A contabilidade permite acompanhar as movimentações econômicas e financeiras de uma empresa, organizar informações relevantes e produzir demonstrativos que auxiliam na compreensão de sua situação patrimonial e financeira.<br><br>Nossa assessoria contábil tem como objetivo apoiar a organização dos registros contábeis e oferecer informações que contribuam para a análise dos resultados e para a tomada de decisões empresariais.</p>
-                        <h3 class="service-title">Principais serviços:</h3>
-                        <ul class="service-list">
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Escrituração dos livros contábeis, incluindo Diário e Razão, conforme as exigências aplicáveis.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Elaboração de demonstrativos contábeis e financeiros, como balancetes, balanços patrimoniais e Demonstração do Resultado do Exercício (DRE).</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Preparação e transmissão de declarações e obrigações contábeis aplicáveis.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Assessoria e orientação contábil para a gestão empresarial.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio na organização das informações necessárias ao cumprimento das obrigações contábeis.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Elaboração e acompanhamento de pedidos de restituição, ressarcimento e compensação tributária, quando aplicáveis.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Suporte no atendimento a fiscalizações e solicitações dos órgãos competentes.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="image-container">
-                        <div class="image-wrapper">
-                        <div class="placeholder-image">
-                            <img src="assets/images/assessoria-contabil.jpg" alt="Assessoria Contábil">
+                <!-- Coluna da Direita: O Formulário -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" action="#" method="POST">                   
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Ex: Carlos Silva" required>
                         </div>
-                        </div>
-                    </div>
-            </div>
-         </div>
-    </section>
 
-    <section class="serviced-section">
-        <div class="container">
-            <div class="serviced-card">
-                <div class="section-header">
-                    <div class="badge">Assessoria Fiscal e Tributária</div>
-                    <h2 class="section-title">Mais organização e acompanhamento<br> para as obrigações fiscais da sua empresa</h2>
-                </div>
-              
-                <div class="serviced-grid">
-                    <div class="serviced-content">
-                        <p class="service-description">A gestão fiscal e tributária exige atenção às regras aplicáveis, aos prazos e à correta apuração dos tributos relacionados às atividades empresariais. <br><br>Nossa assessoria busca apoiar as empresas na organização de suas rotinas fiscais, no acompanhamento das obrigações tributárias e na análise de alternativas de enquadramento e planejamento, de acordo com as características de cada negócio.</p>
-                        <h3 class="service-title">Principais serviços:</h3>
-                        <ul class="service-list">
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Escrituração e organização dos registros fiscais.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação sobre a emissão de notas fiscais.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Preparação e transmissão de declarações e obrigações fiscais aplicáveis.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apuração de tributos nas esferas federal, estadual e municipal, conforme o enquadramento da empresa.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Emissão de guias de recolhimento dos tributos sob nossa responsabilidade.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Consultoria e orientação fiscal e tributária.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Análise de alternativas de regime tributário, considerando a atividade e as características da empresa.</p>
-                            </li>
-                             <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Planejamento tributário dentro dos limites da legislação vigente.</p>
-                            </li>
-                             <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio no acompanhamento de fiscalizações e no atendimento às solicitações dos órgãos competentes.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="image-container">
-                        <div class="image-wrapper">
-                        <div class="placeholder-image">
-                            <img src="assets/images/assessoria-tributaria.jpg" alt="Assessoria Contábil">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail Institucional</label>
+                                <input type="email" id="email" name="email" placeholder="Seu email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Telefone</label>
+                                <input type="text" id="phone" name="phone" placeholder="Seu Telefone">
+                            </div>
                         </div>
-                        </div>
-                    </div>
-            </div>
-         </div>
-    </section>
 
-     <section class="serviced-section">
-        <div class="container">
-            <div class="serviced-card">
-                <div class="section-header">
-                    <div class="badge">Assessoria Societária</div>
-                    <h2 class="section-title">Apoio para a organização e a regularidade da sua empresa</h2>
-                </div>
-              
-                <div class="serviced-grid">
-                    <div class="serviced-content">
-                        <p class="service-description">As questões societárias envolvem procedimentos, registros e documentos necessários à constituição, à manutenção e à regularidade das empresas perante os órgãos competentes.<br><br>Nossa assessoria societária oferece suporte em demandas relacionadas à documentação empresarial, às alterações cadastrais e societárias e ao acompanhamento de processos de regularização, conforme os serviços contratados.</p>
-                        <h3 class="service-title">Principais serviços:</h3>
-                        <ul class="service-list">
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Consultoria e orientação em questões societárias.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio na elaboração e alteração de contratos sociais, conforme o escopo contratado. Acompanhamento de registros e documentos societários.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text"> Orientação para parcelamento de débitos fiscais, conforme as condições e os programas disponíveis.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio na obtenção e no acompanhamento de certidões de regularidade.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Acompanhamento da situação cadastral e fiscal perante órgãos públicos.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação sobre certificação digital e certificados vinculados à infraestrutura ICP-Brasil.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Análise de alternativas de regime tributário, considerando a atividade e as características da empresa.</p>
-                            </li>
-                             <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio em procedimentos de cadastro e atualização em sistemas administrativos, quando aplicáveis.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="image-container">
-                        <div class="image-wrapper">
-                        <div class="placeholder-image">
-                            <img src="assets/images/assessoria-societaria.jpg" alt="Assessoria Contábil">
+                        <div class="form-group">
+                            <label for="size">Área de Interesse</label>
+                            <select id="size" name="size">
+                                <option>Assessoria Contábil</option>
+                                <option>Assessoria Fiscal e Tributária</option>
+                                <option>Assessoria Societária</option>
+                                <option>Departamento Pessoal</option>
+                                <option>Abertura de Empresas</option>
+                                <option>Imposto de Renda Pessoa Física</option>
+                            </select>
                         </div>
-                        </div>
-                    </div>
-            </div>
-         </div>
-    </section>
 
-     <section class="serviced-section">
-        <div class="container">
-            <div class="serviced-card">
-                <div class="section-header">
-                    <div class="badge">Departamento Pessoal</div>
-                    <h2 class="section-title">Mais organização para as rotinas trabalhistas da sua empresa</h2>
-                </div>
-              
-                <div class="serviced-grid">
-                    <div class="serviced-content">
-                        <p class="service-description">A administração de pessoal envolve processos que exigem organização, atenção aos prazos e acompanhamento das obrigações trabalhistas e previdenciárias.<br><br>Nossa assessoria busca apoiar as empresas na execução dessas rotinas, desde os procedimentos de admissão até o encerramento dos vínculos de trabalho, de acordo com a legislação aplicável.</p>
-                        <h3 class="service-title">Principais serviços:</h3>
-                        <ul class="service-list">
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Organização e acompanhamento dos processos de admissão e desligamento de empregados.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Elaboração da folha de pagamento.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Cálculo de férias, décimo terceiro salário e demais verbas trabalhistas aplicáveis.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Preparação de documentos relacionados aos contratos de trabalho.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação sobre registros e documentação dos empregados.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Elaboração de cálculos e documentos rescisórios</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação sobre encargos incidentes sobre a folha de pagamento.</p>
-                            </li>
-                             <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio no atendimento a fiscalizações e solicitações dos órgãos competentes.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="image-container">
-                        <div class="image-wrapper">
-                        <div class="placeholder-image">
-                            <img src="assets/images/dep-pessoal.jpg" alt="Assessoria Contábil">
+                        <div class="form-group">
+                            <label for="message">Qual a sua necessidade?</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Descreva brevemente o seu caso para que possamos direcionar ao especialista correto" required></textarea>
                         </div>
-                        </div>
-                    </div>
-            </div>
-         </div>
-    </section>
 
-    <section class="serviced-section">
-        <div class="container">
-            <div class="serviced-card">
-                <div class="section-header">
-                    <div class="badge">Abertura e Legalização de Empresas</div>
-                    <h2 class="section-title">Comece seu negócio com orientação e planejamento</h2>
-                </div>
-              
-                <div class="serviced-grid">
-                    <div class="serviced-content">
-                        <p class="service-description">A abertura de uma empresa envolve decisões importantes, como a definição das atividades, a escolha da natureza jurídica, a organização dos documentos e a avaliação do regime tributário adequado.<br><br>Oferecemos suporte nos procedimentos de abertura e legalização empresarial, buscando orientar o empreendedor sobre as etapas necessárias à formalização do negócio e os registros aplicáveis à sua atividade.</p>
-                        <h3 class="service-title">Principais serviços:</h3>
-                        <ul class="service-list">
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação inicial para a constituição da empresa.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio na definição das atividades empresariais e na avaliação do enquadramento tributário.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Preparação de contratos sociais e documentos de constituição, conforme o serviço contratado.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Pesquisa de disponibilidade do nome empresarial, quando aplicável.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação e acompanhamento dos procedimentos de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ).</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Acompanhamento de registros perante os órgãos competentes.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação sobre inscrições municipais e estaduais, quando necessárias.</p>
-                            </li>
-                             <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio no atendimento a fiscalizações e solicitações dos órgãos competentes.</p>
-                            </li>
-                            </li>
-                             <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação sobre exigências de vigilância sanitária e segurança contra incêndio, quando aplicáveis.</p>
-                            </li>
-                            </li>
-                             <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Apoio nos procedimentos de registro perante conselhos profissionais, quando exigidos.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="image-container">
-                        <div class="image-wrapper">
-                        <div class="placeholder-image">
-                            <img src="assets/images/abertura-de-empresa.jpg" alt="Assessoria Contábil">
-                        </div>
-                        </div>
-                    </div>
-            </div>
-         </div>
-    </section>
+                        <p class="form-privacy-notice">
+                            * Ao enviar, você concorda com o tratamento de dados estritamente para fins de retorno comercial, conforme nossa Política de Privacidade e a LGPD.
+                        </p>
 
-     <section class="serviced-section">
-        <div class="container">
-            <div class="serviced-card">
-                <div class="section-header">
-                    <div class="badge">Imposto de Renda para Pessoa Física</div>
-                    <h2 class="section-title">Sua declaração de Imposto de Renda com atenção e orientação profissional.</h2>
+                        <button type="submit" class="btn btn-primary form-submit">Solicitar Atendimento</button>
+                    </form>
                 </div>
-              
-                <div class="serviced-grid">
-                    <div class="serviced-content">
-                        <p class="service-description">A declaração do Imposto de Renda da Pessoa Física exige organização dos documentos, análise das informações financeiras e atenção às regras e aos prazos estabelecidos pela Receita Federal.<br><br>Oferecemos suporte na preparação da declaração e na organização das informações necessárias, buscando proporcionar mais clareza e tranquilidade durante o processo.</p>
-                        <h3 class="service-title">Principais serviços:</h3>
-                        <ul class="service-list">
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Preparação e transmissão da Declaração de Imposto de Renda da Pessoa Física (DIRPF).</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação sobre a documentação necessária para a declaração.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Organização e análise das informações e dos rendimentos informados pelo contribuinte.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Escrituração do Livro Caixa, quando aplicável.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Orientação e acompanhamento dos procedimentos de inscrição no Cadastro Nacional da Pessoa Jurídica (CNPJ).</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Preparação e orientação sobre o recolhimento mensal obrigatório pelo Carnê-Leão, quando aplicável.</p>
-                            </li>
-                            <li class="service-item"><span class="service-icon"><i class="fi fi-rs-bullet"></i></span>
-                            <p class="service-text">Atendimento personalizado a profissionais liberais, conforme as necessidades de cada caso.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="image-container">
-                        <div class="image-wrapper">
-                        <div class="placeholder-image">
-                            <img src="assets/images/imposto-de-renda.jpg" alt="Imposto de Renda">
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-   <section class="contact-section">
-    <div class="contact-container">
-        <div class="section-header">
-            <span class="section-tag">Entre em Contato</span>
-            <h2 class="section-title">Conte com uma assessoria<br> comprometida com suas necessidades.</h2>
-            <p class="section-description"></p>
-        </div>
-        <div class="contact-grid">
-            <div class="contact-info">
-                <div>
-                    <h3>Fale Conosco</h3>
-                    <p>Precisa de apoio para organizar a contabilidade da sua empresa, acompanhar suas obrigações fiscais ou esclarecer dúvidas sobre nossos serviços?<br><br>Entre em contato com a Oliveira e Resende. Nossa equipe vai orientar você sobre suas necessidades.</p>
-                </div>
+            </div>
+        </section>
+
+
+        <!-- RODAPÉ INSTITUCIONAL (FOOTER) -->
+        <footer class="main-footer section-dark">
+            <div class="footer-container">
                 
-                <ul class="info-details">
-                    <li class="info-item">
-                        <i class="uil uil-location-point"></i>
-                        <div>
-                            <h4>Nosso Escritório</h4>
-                            <p>R. Carlos Sampaio, 304 - conjunto 31 — Bela Vista<br>São Paulo – SP - 01333-020.</p>
-                        </div>
-                    </li>
-                    <li class="info-item">
-                        <i class="uil uil-phone"></i>
-                        <div>
-                            <h4>Telefone de Contato</h4>
-                            <p>(11) 3262-4832</p>
-                        </div>
-                    </li>
-                    <li class="info-item">
-                        <i class="uil uil-envelope"></i>
-                        <div>
-                            <h4>E-mail</h4>
-                            <p>contato@oliveiraresende.com.br</p>
-                        </div>
-                    </li>
-                    <li class="info-item">
-                        <i class="uil uil-clock"></i>
-                        <div>
-                            <h4>Horário de Atendimento</h4>
-                            <p>Segunda a Sexta: 09h às 18h</p>
-                        </div>
-                    </li>
-                </ul>
-                <div class="social-links">
-                    <h4>Siga-nos</h4>
-                        <a href="#" class="social-icon" title="Instagram"><i class="uil uil-instagram"></i></a>
-                        <a href="#" class="social-icon" title="Facebook"><i class="uil uil-facebook-f"></i></a>
+                <!-- Coluna 1: Branding  -->
+                <div class="footer-brand">
+                    <img src="./assets/images/logo-metalico.png" alt="">
+                    <p class="footer-bio">Assessoria contábil, fiscal, tributária e empresarial para apoiar empresas e empreendedores na organização de suas obrigações e na gestão de suas atividades.</p>
+                </div>
+
+                <!-- Coluna 2: Links Institucionais -->
+                <div class="footer-links-col">
+                    <h4>Navegação</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#areas">Áreas de Atuação</a></li>
+                        <li><a href="#features">Diferenciais</a></li>
+                        <li><a href="#contact">Agendar Consulta</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Áreas de Prática (Links Rápidos) -->
+                <div class="footer-links-col">
+                    <h4>Soluções</h4>
+                    <ul class="footer-links">
+                        <li><a href="#areas">Assessoria Contábil</a></li>
+                        <li><a href="#areas">Assessoria Fiscal e Tributária</a></li>
+                        <li><a href="#areas">Assessoria Societária</a></li>
+                        <li><a href="#areas">Departamento Pessoal</a></li>
+                        <li><a href="#areas">Abertura de Empresas</a></li>
+                        <li><a href="#areas">Imposto de Renda Pessoa Física</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Redes Sociais</h4>
+                    <ul class="social-links">
+                        <li><a href="#"><img class="social-icon" src="assets/icons/facebook.svg"></a></li>
+                        <li><a href="#"><img class="social-icon" src="assets/icons/instagram.svg"></a></li>
+                    </ul>
                 </div>
             </div>
-    
-            <!-- Lado Direito: Formulário de Contato -->
-            <div class="contact-form-container">
-                <h3>Envie uma Mensagem</h3>
-                <p>Preencha o formulário abaixo e responderemos o mais rápido possível.</p>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nome Completo</label>
-                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
-                    </div>
 
-                    <div class="form-group">
-                        <label for="phone">Telefone / WhatsApp</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Ex: (11) 99999-9999" required>
+            <!-- Barra de Direitos Autorais e Legal -->
+            <div class="footer-bottom">
+                <div class="footer-bottom-container">
+                    <p>&copy; 2023 Oliveira e Resende Advogados Associados. Todos os direitos reservados.</p>
+                    <div class="footer-legal-links">
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Política de Privacidade</a>
                     </div>
-    
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
-                    </div>
-    
-                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
-   </section>
+        </footer>
 
-   <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-copyright">
-                <p>© 2023  Oliveira e Resende Advogados Associados. Todos os direitos reservados.</p>
-            </div>
-            <div class="footer-links">
-                <a href="#privacy">Politica de Privacidade</a>
-                <a href="#terms">Termos de Uso</a>
-            </div>
-        </div>
-    </footer>
+        <!-- BOTÃO FLUTUANTE DO WHATSAPP CORPORATIVO -->
+        <a href="https://wa.me de%20agendar%20uma%20reunião%20estratégica." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+            <!-- Balão de Ajuda Sutil (Dica de Ferramenta) -->
+            <span class="whatsapp-tooltip">Fale com um Especialista</span>
+            
+            <!-- Ícone do WhatsApp em SVG Puro (Garante alta definição sem carregar imagens pesadas) -->
+            <svg class="whatsapp-icon" viewBox="0 0 448 512" width="24" height="24">
+                <path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+            </svg>
+        </a>
 
-   
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('nav-menu');
+    </main>
 
-        hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-        });
 
-        document.querySelectorAll('.nav-link, .nav-menu .cta-btn').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.body.classList.remove('menu-open');
-        });
-        });
-        // This script is only for accessibility improvements and minimal interactions
-        document.addEventListener('DOMContentLoaded', function() {
-            // Add keyboard navigation support for footer links
-            const footerLinks = document.querySelectorAll('.footer-link');
-            footerLinks.forEach(link => {
-            link.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter') {
-                e.preventDefault();
-                this.click();
-                }
-            });
-            });
-        });
-    </script>
-
+    <script src="assets/js/script.js"></script>
+    
 </body>
-
 </html>
-
-
-
